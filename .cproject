@@ -5,9 +5,9 @@
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="sharc.toolchain.configuration.debug.92080194" moduleId="org.eclipse.cdt.core.settings" name="Debug">
 				<externalSettings/>
 				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
 					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="com.analog.crosscore.managedbuilder.core.errorparser" point="org.eclipse.cdt.core.ErrorParser"/>
-					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
@@ -20,11 +20,11 @@
 								<option id="assembler.option.debugcode.616445668" name="Generate debug information (-g)" superClass="assembler.option.debugcode"/>
 								<option id="assembler.option.proc.507955163" name="-proc" superClass="assembler.option.proc" value=" ADSP-21479" valueType="string"/>
 								<option id="assembler.option.sirevision.311153497" name="-si-revision" superClass="assembler.option.sirevision" value=" 0.2" valueType="string"/>
-								<option id="assembler.option.preprocessdefs.166896555" name="Preprocessor definitions (-D):" superClass="assembler.option.preprocessdefs" valueType="definedSymbols">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="assembler.option.preprocessdefs.166896555" name="Preprocessor definitions (-D):" superClass="assembler.option.preprocessdefs" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_DEBUG"/>
 									<listOptionValue builtIn="false" value="CORE0"/>
 								</option>
-								<option id="assembler.option.additionaldirectories.1813427372" name="Additional include directories (-I):" superClass="assembler.option.additionaldirectories" valueType="includePath">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="assembler.option.additionaldirectories.1813427372" name="Additional include directories (-I):" superClass="assembler.option.additionaldirectories" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/system}&quot;"/>
 								</option>
 								<inputType id="assembler.input.1854052753" name="Assembler Source" superClass="assembler.input"/>
@@ -34,15 +34,15 @@
 								<option id="compiler.option.debugcode.1611218226" name="Generate debug information (-g)" superClass="compiler.option.debugcode"/>
 								<option id="compiler.option.proc.117391555" name="-proc" superClass="compiler.option.proc" value=" ADSP-21479" valueType="string"/>
 								<option id="compiler.option.sirevision.826320103" name="-si-revision" superClass="compiler.option.sirevision" value=" 0.2" valueType="string"/>
-								<option id="compiler.option.preprocessdefs.1606305408" name="Preprocessor definitions (-D):" superClass="compiler.option.preprocessdefs" valueType="definedSymbols">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="compiler.option.preprocessdefs.1606305408" name="Preprocessor definitions (-D):" superClass="compiler.option.preprocessdefs" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_DEBUG"/>
 									<listOptionValue builtIn="false" value="CORE0"/>
 								</option>
-								<option id="compiler.option.additionaldirectories.1337046467" name="Additional include directories (-I):" superClass="compiler.option.additionaldirectories" valueType="includePath">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="compiler.option.additionaldirectories.1337046467" name="Additional include directories (-I):" superClass="compiler.option.additionaldirectories" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/system}&quot;"/>
 								</option>
 								<option id="compiler.option.compilerswitch.1072800730" name="Compiler Switch" superClass="compiler.option.compilerswitch" value="false" valueType="boolean"/>
-								<option id="compiler.option.coreid.346953824" superClass="compiler.option.coreid" value="0" valueType="string"/>
+								<option id="compiler.option.coreid.346953824" name="Specify the core Id (-DCORE[A|B|0-2])" superClass="compiler.option.coreid" value="0" valueType="string"/>
 								<inputType id="compiler.inputType.1018957286" name="C/C++ Source" superClass="compiler.inputType"/>
 							</tool>
 							<tool id="sharc.toolchain.linker.833716565" name="CrossCore SHARC Linker" superClass="sharc.toolchain.linker">
@@ -51,12 +51,12 @@
 								<option id="linker.option.usedbglib.1445325469" name="Use Debug System libraries (-add-debug-libpaths)" superClass="linker.option.usedbglib"/>
 								<option id="linker.option.proc.700469348" name="-proc" superClass="linker.option.proc" value=" ADSP-21479" valueType="string"/>
 								<option id="linker.option.sirevision.1873740255" name="-si-revision" superClass="linker.option.sirevision" value=" 0.2" valueType="string"/>
-								<option id="linker.option.preprocessdefs.1440623225" name="Preprocessor definitions (-MD)" superClass="linker.option.preprocessdefs" valueType="definedSymbols">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="linker.option.preprocessdefs.1440623225" name="Preprocessor definitions (-MD)" superClass="linker.option.preprocessdefs" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="CORE0"/>
 								</option>
 								<option id="linker.option.ldfprocessing.ldffile.1104176085" name="Custom LDF (-T)" superClass="linker.option.ldfprocessing.ldffile" value="&quot;${ProjDirPath}/system/startup_ldf/app.ldf&quot;" valueType="string"/>
-								<option id="linker.option.srchdir.2079506250" name="Library search directories (-L):" superClass="linker.option.srchdir" valueType="libPaths">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="linker.option.srchdir.2079506250" name="Library search directories (-L):" superClass="linker.option.srchdir" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${OutDir}/system/startup_ldf&quot;"/>
 								</option>
 								<inputType id="linker.doj.input.232081464" name="Object Files" superClass="linker.doj.input"/>
@@ -68,6 +68,9 @@
 							<tool id="sharc.toolchain.loader.1212485380" name="CrossCore SHARC Loader" superClass="sharc.toolchain.loader">
 								<option id="loader.option.proc.2021618440" name="-proc" superClass="loader.option.proc" value=" ADSP-21479" valueType="string"/>
 								<option id="loader.option.sirevision.769382516" name="-si-revision" superClass="loader.option.sirevision" value=" 0.2" valueType="string"/>
+							</tool>
+							<tool id="sharc.toolchain.deviceprogrammer.1120357417" name="CrossCore SHARC Device Programmer" superClass="sharc.toolchain.deviceprogrammer">
+								<option id="deviceprogrammer.option.proc.651841899" name="-proc" superClass="deviceprogrammer.option.proc" value=" ADSP-21479" valueType="string"/>
 							</tool>
 						</toolChain>
 					</folderInfo>
@@ -84,9 +87,9 @@
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="sharc.toolchain.configuration.release.29718403" moduleId="org.eclipse.cdt.core.settings" name="Release">
 				<externalSettings/>
 				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
 					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="com.analog.crosscore.managedbuilder.core.errorparser" point="org.eclipse.cdt.core.ErrorParser"/>
-					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
@@ -99,11 +102,11 @@
 								<option id="assembler.option.debugcode.52249226" name="Generate debug information (-g)" superClass="assembler.option.debugcode" value="false" valueType="boolean"/>
 								<option id="assembler.option.proc.265970269" name="-proc" superClass="assembler.option.proc" value=" ADSP-21479" valueType="string"/>
 								<option id="assembler.option.sirevision.806988861" name="-si-revision" superClass="assembler.option.sirevision" value=" 0.2" valueType="string"/>
-								<option id="assembler.option.preprocessdefs.1118388694" name="Preprocessor definitions (-D):" superClass="assembler.option.preprocessdefs" valueType="definedSymbols">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="assembler.option.preprocessdefs.1118388694" name="Preprocessor definitions (-D):" superClass="assembler.option.preprocessdefs" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="NDEBUG"/>
 									<listOptionValue builtIn="false" value="CORE0"/>
 								</option>
-								<option id="assembler.option.additionaldirectories.701448860" name="Additional include directories (-I):" superClass="assembler.option.additionaldirectories" valueType="includePath">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="assembler.option.additionaldirectories.701448860" name="Additional include directories (-I):" superClass="assembler.option.additionaldirectories" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/system}&quot;"/>
 								</option>
 								<inputType id="assembler.input.2106191236" name="Assembler Source" superClass="assembler.input"/>
@@ -113,15 +116,15 @@
 								<option id="compiler.option.debugcode.1434157054" name="Generate debug information (-g)" superClass="compiler.option.debugcode" value="false" valueType="boolean"/>
 								<option id="compiler.option.proc.437724163" name="-proc" superClass="compiler.option.proc" value=" ADSP-21479" valueType="string"/>
 								<option id="compiler.option.sirevision.381278423" name="-si-revision" superClass="compiler.option.sirevision" value=" 0.2" valueType="string"/>
-								<option id="compiler.option.preprocessdefs.1730555151" name="Preprocessor definitions (-D):" superClass="compiler.option.preprocessdefs" valueType="definedSymbols">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="compiler.option.preprocessdefs.1730555151" name="Preprocessor definitions (-D):" superClass="compiler.option.preprocessdefs" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="NDEBUG"/>
 									<listOptionValue builtIn="false" value="CORE0"/>
 								</option>
-								<option id="compiler.option.additionaldirectories.78164372" name="Additional include directories (-I):" superClass="compiler.option.additionaldirectories" valueType="includePath">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="compiler.option.additionaldirectories.78164372" name="Additional include directories (-I):" superClass="compiler.option.additionaldirectories" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/system}&quot;"/>
 								</option>
 								<option id="compiler.option.compilerswitch.75933507" name="Compiler Switch" superClass="compiler.option.compilerswitch" value="false" valueType="boolean"/>
-								<option id="compiler.option.coreid.269939371" superClass="compiler.option.coreid" value="0" valueType="string"/>
+								<option id="compiler.option.coreid.269939371" name="Specify the core Id (-DCORE[A|B|0-2])" superClass="compiler.option.coreid" value="0" valueType="string"/>
 								<inputType id="compiler.inputType.395968504" name="C/C++ Source" superClass="compiler.inputType"/>
 							</tool>
 							<tool id="sharc.toolchain.linker.281106050" name="CrossCore SHARC Linker" superClass="sharc.toolchain.linker">
@@ -130,12 +133,12 @@
 								<option id="linker.option.usedbglib.1517033389" name="Use Debug System libraries (-add-debug-libpaths)" superClass="linker.option.usedbglib" value="false" valueType="boolean"/>
 								<option id="linker.option.proc.1395674976" name="-proc" superClass="linker.option.proc" value=" ADSP-21479" valueType="string"/>
 								<option id="linker.option.sirevision.646525882" name="-si-revision" superClass="linker.option.sirevision" value=" 0.2" valueType="string"/>
-								<option id="linker.option.preprocessdefs.1801970949" name="Preprocessor definitions (-MD)" superClass="linker.option.preprocessdefs" valueType="definedSymbols">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="linker.option.preprocessdefs.1801970949" name="Preprocessor definitions (-MD)" superClass="linker.option.preprocessdefs" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="RELEASE"/>
 									<listOptionValue builtIn="false" value="CORE0"/>
 								</option>
 								<option id="linker.option.ldfprocessing.ldffile.19955560" name="Custom LDF (-T)" superClass="linker.option.ldfprocessing.ldffile" value="&quot;${ProjDirPath}/system/startup_ldf/app.ldf&quot;" valueType="string"/>
-								<option id="linker.option.srchdir.2010937383" name="Library search directories (-L):" superClass="linker.option.srchdir" valueType="libPaths">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="linker.option.srchdir.2010937383" name="Library search directories (-L):" superClass="linker.option.srchdir" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${OutDir}/system/startup_ldf&quot;"/>
 								</option>
 								<inputType id="linker.doj.input.1149462890" name="Object Files" superClass="linker.doj.input"/>
@@ -147,6 +150,9 @@
 							<tool id="sharc.toolchain.loader.147637417" name="CrossCore SHARC Loader" superClass="sharc.toolchain.loader">
 								<option id="loader.option.proc.1062943202" name="-proc" superClass="loader.option.proc" value=" ADSP-21479" valueType="string"/>
 								<option id="loader.option.sirevision.623162385" name="-si-revision" superClass="loader.option.sirevision" value=" 0.2" valueType="string"/>
+							</tool>
+							<tool id="sharc.toolchain.deviceprogrammer.1384594969" name="CrossCore SHARC Device Programmer" superClass="sharc.toolchain.deviceprogrammer">
+								<option id="deviceprogrammer.option.proc.1431216292" name="-proc" superClass="deviceprogrammer.option.proc" value=" ADSP-21479" valueType="string"/>
 							</tool>
 						</toolChain>
 					</folderInfo>
