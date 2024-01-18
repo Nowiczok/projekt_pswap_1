@@ -120,28 +120,17 @@ extern float In_Buf2[NUM_SAMPLES+TAPSIZE2-1];
 extern float Out_Buf1[NUM_SAMPLES];
 extern float Out_Buf2[NUM_SAMPLES];
 
-float old_samples_buf1[TAPSIZE1-1] = {0};
-float old_samples_buf2[TAPSIZE2-1] = {0};
-
 extern volatile bool iteration_done;
 
 static void process_audioBlocks(void)
 {
 	int temp;
 
-	// populate input buffers with some old data
-	memcopy(old_samples_buf1, In_Buf1, TAPSIZE1-1);
-	memcopy(old_samples_buf2, In_Buf2, TAPSIZE1-1);
-
-	// populate input buffers with new data
+	// populate input buffers
 	memcopy(fBlockA.Rx_L1, &In_Buf1[TAPSIZE1-1], NUM_SAMPLES);
 	memcopy(fBlockA.Rx_R1, &In_Buf2[TAPSIZE1-1], NUM_SAMPLES);
 
-	// save some data for later
-	memcopy(&fBlockA.Rx_L1[(NUM_SAMPLES-TAPSIZE1-1)-1], old_samples_buf1, TAPSIZE1-1);
-	memcopy(&fBlockA.Rx_R1[(NUM_SAMPLES-TAPSIZE2-1)-1], old_samples_buf2, TAPSIZE2-1);
-
-	// enable accelerator
+//	// enable accelerator
 	temp = FIR_EN | FIR_DMAEN | FIR_CH2;
 	*pFIRCTL1 = temp;
 
