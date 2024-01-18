@@ -47,8 +47,8 @@ void TalkThroughISR(uint32_t iid, void* handlerArg)
 {
     int i;
        
-    if(isProcessing)
-        ProcessingTooLong();
+//    if(isProcessing)
+//        ProcessingTooLong();
 
     /*Increment the block pointer */
     buffer_cntr++;

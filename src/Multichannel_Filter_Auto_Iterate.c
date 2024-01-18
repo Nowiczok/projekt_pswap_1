@@ -169,9 +169,8 @@ int main( void )
 
 	/* Set the values for FIRCTL1 */
 	// two channels with interrupt enabled, no auto iterate
-	temp = FIR_CH2 | FIR_DMAEN;
-	*pFIRCTL1 = temp;
-
+//	temp = FIR_EN | FIR_DMAEN | FIR_CH2;
+//	*pFIRCTL1 |= temp;
     /* Be in infinite loop and do nothing until done.*/
     while(1) {
     		if(inputReady)
@@ -185,6 +184,9 @@ int main( void )
 void ChannelscompISR(uint32_t iid, void *handlerarg)
 {
 	iteration_done = true;
+	*pFIRDMASTAT = 0;
+	// disable acc
+	*pFIRCTL1 = 0;
 }
 
 

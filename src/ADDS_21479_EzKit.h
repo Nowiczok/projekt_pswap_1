@@ -23,23 +23,21 @@
 #include "adi_initialize.h"
 #include <sru.h>
 #include "ad1939.h"
+/* Block Size per Audio Channel*/
+#define NUM_SAMPLES 256
 
-#define TAPS1 63
-#define WINDOWS1 31<<14
+#define TAPS1 64
+#define WINDOWS1 NUM_SAMPLES<<14
 
-#define TAPS2 63
-#define WINDOWS2 31<<14
+#define TAPS2 64
+#define WINDOWS2 NUM_SAMPLES<<14
 
-#define TAPSIZE1 64
-#define WINDOWSIZE1 32
-
-#define TAPSIZE2 64
-#define WINDOWSIZE2 32
+#define TAPSIZE1 65
+#define TAPSIZE2 65
 
 #define DMAIntrSource 27  /*FIR DMA interrupt source */
 
-/* Block Size per Audio Channel*/
-#define NUM_SAMPLES 256
+
 
 /* Number of stereo channels*/
 #define NUM_RX_SLOTS 4
